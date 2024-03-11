@@ -1,0 +1,232 @@
+/* ----------base styling----------*/
+@font-face {
+    font-family: "avenir-next", sans-serif;
+    src: url(./assets/fonts/avenir-next/AvenirNextCyr-Medium.ttf);
+}
+
+:root {
+    --text-primary-font-family: "avenir-next", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: var(--text-primary-font-family);
+    color: #213F7D;
+}
+
+/* ----------base styling----------*/
+
+/* ----------log-in styling----------*/
+.log-in{
+    height: 100vh;
+    margin-bottom: 100px !important;
+}
+
+.log-in .part-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.log-in .part-1 .image img {
+    width: 600px;
+    height: 337.57px;
+}
+
+.log-in .part-2 h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #213F7D;
+}
+
+.log-in .part-2 p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #545F7D;
+}
+
+.log-in .part-2 form {
+    width: 100%;
+}
+
+.log-in .part-2 form p:last-of-type {
+    color: #39CDCC;
+    font-family: Avenir Next;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.log-in .part-2 form p:first-of-type {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #39CDCC;
+}
+
+.log-in .part-2 form button {
+    width: 100%;
+    height: 48px;
+    top: 563px;
+    left: 836px;
+    border-radius: 8px;
+    background: #39CDCC;
+    border: none;
+    color: #FFFFFF;
+}
+
+.log-in .part-2 button {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.log-in .part-2 .intro {
+    text-align: left;
+    width: 100%;
+}
+
+.log-in form .password-container {
+    position: relative;
+}
+
+.log-in form .show {
+    position: absolute;
+    top: 35%;
+    right: 5%;
+
+}
+
+.log-in form input {
+    width: 100%;
+    height: 50px;
+    border: 2px solid #545F7D26;
+    border-radius: 5px;
+}
+
+.log-in form input {
+    outline: none;
+    padding-left: 20px;
+    padding-right: 10px;
+
+}
+
+.log-in form input::placeholder {
+    color: #545F7D;
+    font-size: 0.875rem;
+    padding-left: 10px;
+}
+/* ----------log in----------*/
+
+/* ----------dashboard----------*/
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #f0f0f0;
+    height: 100%;
+
+}
+
+.main-container li{
+    font-size: 1rem;
+}
+
+.main-container aside{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.navbar {
+    grid-column: 1/13;
+    background-color: white;
+    height: 100px;
+    color: #213F7D;
+    box-shadow: 3px 0px 20px 0px #0000000A;
+    width: 100%;
+}
+
+.navbar a {
+    color: #213F7D;
+}
+
+.nav-link .active {
+    color: #213F7D !important;
+}
+
+
+aside .first-list-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-container aside {
+    grid-column: 1/3;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 44px;
+ padding-left: 20px;
+    margin: 0 !important;
+}
+
+main .card-container{
+    display: flex;
+    gap: 10px;
+}
+
+main .card-container .card {
+    width: 240px;
+    height: 160px;
+    border-radius: 4px;
+    border: 1px;
+    background: #FFFFFF;
+}
+
+
+.main-container main {
+    grid-column: 3/13;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+}
+
+
+main .list-content {
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+main .status li {
+background-color: rebeccapurple !important;
+font-size: 1rem;
+}
+
+main .below-main-dropdown{
+    background-color: tan;
+}
+
+/* ----------dashboard----------*/
